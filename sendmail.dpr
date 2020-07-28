@@ -738,7 +738,6 @@ begin
         try
 
           // if openSSL libraries are available, use SSL for TLS support
-
           smtp.IOHandler := nil;
           smtp.ManagedIOHandler := True;
 
@@ -747,8 +746,8 @@ begin
             try
               TIdSSLContext.Create.Free;
               smtp.IOHandler := TIdSSLIOHandlerSocketOpenSSL.Create(smtp);
-              //smtp.IOHandler.SSLOptions.Method := sslvTLSv1_2;
 
+              // Force TLS v1.1 or v1.2
               TIdSSLIOHandlerSocketOpenSSL(smtp.IOHandler).SSLOptions.SSLVersions := [sslvTLSv1_1, sslvTLSv1_2];
 
               if (smtpSSL = ssAuto) then
