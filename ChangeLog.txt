@@ -1,0 +1,117 @@
+ 
+version 33 - Michel <Sendmail@dotmol.nl> (27 july 2020)
+    - Make the source compile in Embarcadero Delphi 10.3 with the default included Indy 10-260
+    - Needs install of http://madshi.net/index.htm (madExcept 5.1.0) in Delphi Builder
+    - Updated OpenSSL DLL's to 1.0.2u
+    - Forced TLS v1.1 & v1.2, don't allow v1.0
+
+  Byron Jones:
+  version 32 - (18 june 2011)
+    - fix handling of invalid recipients
+
+  version 31 (15 sep, 2010)
+    - fix encoding of 8-bit data
+
+  version 30 (30 aug, 2010)
+    - update to latest indy version (fixes many issues)
+    - add about/version
+
+  version 29 (sep 8, 2009)
+    - fix for another indy 10 "range check error" (when using ssl)
+
+  version 28 (aug 12, 2009)
+    - set ERRORLEVEL to -1 to assist php
+
+  version 27 (aug 3, 2009)
+    - don't treat log write errors as fatal
+
+  version 26 (apr 1, 2009)
+    - no longer require -t parameter
+    - skip first line if it starts with "from " (mail spool delimiting line)
+
+  version 25 (mar 29, 2009)
+    - added force_recipient
+
+  version 24 (dec 2, 2008)
+    - fixes for ssl
+
+  version 23 (apr 24, 2008)
+    - fix timezone in date header
+
+  version 22 (jan 14, 2008)
+    - fixes to error handling
+
+  version 21 (jan 2, 2008)
+    - added TLS support
+
+  version 20 (apr 3, 2007)
+    - fixed race condition in IIS's pickup delivery
+
+  version 19 (jul 24, 2006)
+    - added support for delivery via IIS's pickup directory
+    - optionally reads settings from the registry (in absense of the ini file)
+
+  version 18 (may 1, 2006)
+    - fix for indy 10 "range check error"
+
+  version 17 (nov 2, 2005)
+    - only process message header
+    - optionally use madexcept for detailed crash dumps
+
+  version 16 (sep 12, 2005)
+    - send hostname and domain with HELO/EHLO
+    - configurable HELO/EHLO hostname
+    - upgraded to indy 10
+
+  version 15 (aug 23, 2005)
+    - fixes error messages when debug_logfile is not specified
+
+  version 14 (jun 28, 2005)
+    - errors output to STDERR
+    - fixes for delphi 7 compilation
+    - added 'connecting to..' debug logging
+    - reworked error and debug log format
+
+  version 13 (jun 8, 2005)
+    - added fix to work around invalid multiple header instances
+
+  version 12 (apr 30, 2005)
+    - added cc and bcc support
+
+  version 11 (feb 17, 2005)
+    - added pop3 support (for pop before smtp authentication)
+
+  version 10 (feb 11, 2005)
+    - added support for specifying a different smtp port
+
+  version 9 (sep 22, 2004)
+    - added force_sender
+
+  version 8 (sep 22, 2004)
+    - *really* fixes broken smtp auth
+
+  version 7 (sep 22, 2004)
+    - fixes broken smtp auth
+
+  version 6 (sep 22, 2004)
+    - correctly quotes MAIL FROM and RCPT TO addresses in &lt;&gt;
+
+  version 5 (sep 16, 2004)
+    - now sends the message unchanged (rather than getting indy
+      to regenerate it)
+
+  version 4 (aug 17, 2004)
+    - added debug_logfile parameter
+    - improved error messages
+
+  version 3 (jul 15, 2004)
+    - smtp authentication support
+    - clearer error message when missing from or to address
+    - optional error logging
+    - adds date: if missing
+
+  version 2 (jul 6, 2004)
+    - reads default domain from registry (.ini setting overrides)
+
+  version 1 (jul 1, 2004)
+    - initial release
