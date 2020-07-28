@@ -30,6 +30,7 @@ With PHP the sendmail path isn't hardcoded, but can be configured in the php.ini
 Note: If your SMTP server doesn't require authentication or encryption, you can just use the SMTP an SMPT_PORT config parameters, you don't need sendmail.exe then.
 
 PHP.ini:
+
 [mail function]
 ; For Win32 only.
 ; http://php.net/smtp
