@@ -1,5 +1,5 @@
 # Fake sendmail for Windows with TLS v1.2 support
-This is a revival of the fake sendmail program by Byron Jones (https://www.glob.com.au/sendmail/), if you don't need TLS v1.1 or v1.2 support please use that version, there is no support available on both versions and they are both not actively maintained
+This is a revival of the fake sendmail program by Byron Jones (https://www.glob.com.au/sendmail/), if you don't need TLS v1.1 or v1.2 support please use the original version, there is no support available on both versions and they are both not actively maintained
 
 # ABOUT
 sendmail.exe is a simple windows console application that emulates sendmail's -t option to deliver emails piped via stdin.
