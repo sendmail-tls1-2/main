@@ -68,6 +68,6 @@ uncomment the debug_logfile entry in sendmail.ini and try to resend a failed mes
 Please see the orginial versions site: https://www.glob.com.au/sendmail/
 
 # LICENSE AND SOURCE
-this program is released under the bsd license.
+this program is released under the bsd license: https://www.glob.com.au/sendmail/license.html
 
-the license details and full source code (Delphi 10.3 Rio) are included in the source folder in the zip.
+the license details and full source code (Delphi 10.3 Rio) are included in the source folder in the zipfile.
